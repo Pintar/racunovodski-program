@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="sl">
+    <body>
+      <trans-unit id="28c01f29c9fbf425feefe5e72373cab90a3bc4dc" datatype="html">
+        <source>Go to solving</source><target state="translated">Go to solving</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/invoice-list/components/invoice-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="32d144c486c121fe58693bfe7d8aba13bae8d85e" datatype="html">
+        <source>No table records</source><target state="translated">Ni podatkov</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/table/services/table.service.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="48b317fe8360e05dbcf939a7cc3d539e6870eeb7" datatype="html">
+        <source>all table records</source><target state="translated">vseh</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/table/services/table.service.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="13c1568937ac5446196dc60e7077d768fea1e878" datatype="html">
+        <source>selected table records</source><target state="translated">izbranih</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/table/services/table.service.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

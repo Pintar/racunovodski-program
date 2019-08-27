@@ -27,7 +27,10 @@
               "node_modules/@nebular/theme/styles/prebuilt/dark.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "i18nFile": "src/assets/i18n/messages.sl.xlf",
+            "i18nFormat": "xlf",
+            "i18nLocale": "sl"
           },
           "configurations": {
             "production": {
@@ -117,6 +120,36 @@
           "configurations": {
             "production": {
               "devServerTarget": "client-app:serve:production"
+            }
+          }
+        },
+        "xliffmerge": {
+          "builder": "@ngx-i18nsupport/tooling:xliffmerge",
+          "options": {},
+          "configurations": {
+            "slovenian": {
+              "xliffmergeOptions": {
+                "i18nFormat": "xlf",
+                "srcDir": "src/assets/i18n",
+                "genDir": "src/assets/i18n",
+                "defaultLanguage": "en",
+                "languages": [
+                  "sl"
+                ],
+                "useSourceAsTarget": true
+              }
+            },
+            "english": {
+              "xliffmergeOptions": {
+                "i18nFormat": "xlf",
+                "srcDir": "src/assets/i18n",
+                "genDir": "src/assets/i18n",
+                "defaultLanguage": "en",
+                "languages": [
+                  "en"
+                ],
+                "useSourceAsTarget": true
+              }
             }
           }
         }

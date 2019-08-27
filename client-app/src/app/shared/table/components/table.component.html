@@ -1,0 +1,33 @@
+<div class="row">
+
+  <div class="col-md-8">
+    <h5 class="pdd-top-10">{{tableHeading}}</h5>
+  </div>
+<!-- 
+  <div class="col-md-4 table-page-size">
+    <span i18n class="pull-right">entries</span>
+    <app-table-page-size [hostPageSize]="tablePage.pageSize" (pageSize)="onPageSizeChange($event)"
+                         class="pull-right mrg-horizon-5">
+    </app-table-page-size>
+    <span i18n class="pull-right">Show</span>
+  </div> -->
+
+</div>
+
+<ngx-datatable #table class="ngx-datatable" [rows]="state.rows" [columnMode]="'force'" [columns]="columns"
+               [scrollbarH]="true"
+               [reorderable]="false" [externalPaging]="true" [count]="tablePage.recordCount" [offset]="tablePage.offset"
+               [limit]="tablePage.pageSize" (page)='onPageChangeEvent($event)' [externalSorting]="true"
+               (sort)="onSort($event)"
+               [footerHeight]="50" [cssClasses]="state.cssClasses" [sorts]="[state.initialSort]"
+               [messages]="state.messages"
+               [rowHeight]="'auto'">
+  <ngx-datatable-row-detail [rowHeight]="null" #myDetailRow>
+    <ng-template #details
+                 let-row="row"
+                 let-expanded="expanded"
+                 ngx-datatable-row-detail-template>
+      
+    </ng-template>
+  </ngx-datatable-row-detail>
+</ngx-datatable>
