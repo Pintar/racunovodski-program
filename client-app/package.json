@@ -28,6 +28,7 @@
     "@ngx-translate/i18n-polyfill": "^1.0.0",
     "@swimlane/ngx-datatable": "^15.0.2",
     "lodash": "^4.17.15",
+    "moment": "^2.24.0",
     "ngx-i18nsupport": "^0.17.1",
     "ngx-translate-extract": "^1.0.0",
     "rxjs": "~6.4.0",

@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MockComponent } from 'ng-mocks';
 import { BaseTemplateComponent } from './base-template.component';
 import { RouterOutlet } from '@angular/router';
-import { NbLayoutComponent, NbSidebarComponent, NbLayoutHeaderComponent, NbLayoutColumnComponent } from '@nebular/theme';
+import { NbLayoutComponent, NbSidebarComponent, NbLayoutHeaderComponent, NbLayoutColumnComponent, NbCardBodyComponent, NbCardComponent } from '@nebular/theme';
 
 describe('BaseTemplateComponent', () => {
   let component: BaseTemplateComponent;
@@ -17,6 +17,8 @@ describe('BaseTemplateComponent', () => {
         MockComponent(NbSidebarComponent),
         MockComponent(NbLayoutHeaderComponent),
         MockComponent(NbLayoutColumnComponent),
+        MockComponent(NbCardBodyComponent),
+        MockComponent(NbCardComponent),
       ]
     })
       .compileComponents();

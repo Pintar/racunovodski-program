@@ -8,6 +8,7 @@ import { I18n } from '@ngx-translate/i18n-polyfill';
 import { registerLocaleData } from '@angular/common';
 import localeSl from '@angular/common/locales/sl';
 import localeSlExtra from '@angular/common/locales/extra/sl';
+import { DebugModule } from './debug/modules/debug.module';
 
 declare const require;
 
@@ -15,13 +16,14 @@ registerLocaleData(localeSl, 'sl', localeSlExtra);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     NbThemeModule.forRoot({ name: 'dark' }),
     AppRoutingModule,
     SharedModule.forRoot(),
+    // DebugModule,
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'sl' },
