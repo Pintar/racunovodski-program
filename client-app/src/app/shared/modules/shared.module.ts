@@ -1,8 +1,9 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-import { BaseTemplateComponent } from '../base-template/componentes/base-template.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BaseTemplateComponent } from '../base-template/components/base-template.component';
 import { RouterModule } from '@angular/router';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { NbLayoutModule, NbSidebarModule, NbButtonModule, NbSidebarService, NbTreeGridComponent, NbTreeGridModule, NbSelectModule, NbCardModule } from '@nebular/theme';
+import { NbLayoutModule, NbSidebarModule, NbButtonModule, NbSidebarService, NbTreeGridModule, NbSelectModule, NbCardModule, NbMenuModule, NbMenuService } from '@nebular/theme';
 import { TableModule } from '../table/modules/table.module';
 import { TableService } from '../table/services/table.service';
 import { RequestService } from '../api-requests/services/request.service';
@@ -10,12 +11,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { ApiInvoiceService } from '../api-requests/services/api-invoice.service';
 import { DefaultDatePipe } from '../pipes/default-date.pipe';
 import { DefaultDecimalPipe } from '../pipes/default-decimal.pipe';
+import { MainMenuComponent } from '../base-template/components/main-menu.component';
 
 @NgModule({
   declarations: [
     BaseTemplateComponent,
     DefaultDatePipe,
     DefaultDecimalPipe,
+    MainMenuComponent,
   ],
   exports: [
     NgxDatatableModule,
@@ -37,6 +40,7 @@ import { DefaultDecimalPipe } from '../pipes/default-decimal.pipe';
     NgxDatatableModule,
     TableModule,
     NbSelectModule,
+    NbMenuModule.forRoot(),
   ],
 })
 export class SharedModule {
@@ -48,6 +52,7 @@ export class SharedModule {
         TableService,
         RequestService,
         ApiInvoiceService,
+        NbMenuService,
       ]
     };
   }
