@@ -1,11 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { InvoiceListComponent } from '../components/invoice-list.component';
+import { InvoiceRoutes } from 'src/app/shared/pages/helpers/invoice-routes.helper';
 
 
 const invoiceListRoutes: Routes = [
   {
-    path: '',
+    path: InvoiceRoutes.list,
     component: InvoiceListComponent
   },
 ];

@@ -11,10 +11,20 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: InvoiceRoutes.list,
+    path: '',
     component: BaseTemplateComponent,
-    loadChildren: './features/invoice-list/modules/invoice-list.module#InvoiceListModule'
+    children: [
+      {
+        path: '',
+        loadChildren: './features/invoice-list/modules/invoice-list.module#InvoiceListModule'
+      },
+      {
+        path: '',
+        loadChildren: './features/customers/modules/customers.module#CustomersModule'
+      },
+    ]
   },
+
 ];
 
 const config: ExtraOptions = {
