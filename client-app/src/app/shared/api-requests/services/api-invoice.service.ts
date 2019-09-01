@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TableQueryResponse } from '../../table/interfaces/table-response.interface';
-import { InvoiceListItem } from 'src/app/features/invoice-list/interfaces/invoice-list-item.interface';
 import { RequestService } from './request.service';
 import { TableRequest } from '../../table/interfaces/table-request.interface';
 import { HttpRequest } from '@angular/common/http';
+import { InvoiceListItem } from 'src/app/features/invoices/invoice-list/interfaces/invoice-list-item.interface';
 
 @Injectable()
 export class ApiInvoiceService {

@@ -16,7 +16,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: './features/invoice-list/modules/invoice-list.module#InvoiceListModule'
+        loadChildren: './features/invoices/modules/invoices.module#InvoicesModule'
       },
       {
         path: '',

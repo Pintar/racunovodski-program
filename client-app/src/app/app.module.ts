@@ -10,7 +10,6 @@ import localeSl from '@angular/common/locales/sl';
 import localeSlExtra from '@angular/common/locales/extra/sl';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DebugModule } from './debug/modules/debug.module';
-
 declare const require;
 
 registerLocaleData(localeSl, 'sl', localeSlExtra);

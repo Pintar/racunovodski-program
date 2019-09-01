@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { TableQueryResponse } from 'src/app/shared/table/interfaces/table-response.interface';
-import { InvoiceListItem } from 'src/app/features/invoice-list/interfaces/invoice-list-item.interface';
+import { InvoiceListItem } from 'src/app/features/invoices/invoice-list/interfaces/invoice-list-item.interface';
 
 @Injectable()
 export class InvoiceListInterceptor {
